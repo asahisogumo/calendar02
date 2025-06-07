@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -156,5 +157,61 @@
 
     renderCalendar();
   </script>
+
+<div style="margin: 20px 0; padding: 10px; background: #fff3cd; border-left: 5px solid #ffc107;">
+  <h3>🎁 プレミアム会員になろう！</h3>
+  <p>月額500円で限定機能・キャラボイス・スキンが使い放題！</p>
+  <button onclick="subscribePremium()" style="background: linear-gradient(45deg, gold, orange); border: none; color: white; padding: 10px 20px; font-size: 16px; border-radius: 8px; cursor: pointer;">今すぐ登録（Stripe）</button>
+  <p style="font-size: 12px; color: #666; margin-top: 8px;">※ いつでも解約可能。Stripeによる安全な決済です。</p>
+</div>
+
+<script>
+function subscribePremium() {
+  window.location.href = "https://buy.stripe.com/test_5kA5oR2aVc1W9oY5kk";
+}
+</script>
+
+
+
+
+
+
+
+<style>
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+button:hover {
+  transform: scale(1.05);
+}
+</style>
+
+
+<section style="margin: 30px auto; max-width: 600px; background: #e3f2fd; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); animation: fadeIn 1s ease;">
+  <h2 style="text-align:center; font-size: 22px; color: #1565c0;">📘 スタンダードプラン（月額500円）</h2>
+  <ul style="font-size: 16px; line-height: 1.8; color: #333;">
+    <li>🧹 広告非表示</li>
+    <li>🎨 スキン切替（春・夏・秋・冬）</li>
+    <li>📝 メモ無制限保存</li>
+  </ul>
+</section>
+
+<section style="margin: 30px auto; max-width: 600px; background: #fff3e0; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); animation: fadeIn 1s ease;">
+  <h2 style="text-align:center; font-size: 22px; color: #ef6c00;">📙 プレミアムプラン（月額800円）</h2>
+  <ul style="font-size: 16px; line-height: 1.8; color: #333;">
+    <li>🧠 AI予定提案</li>
+    <li>🎤 キャラボイス（白馬・黒馬・幻の馬）</li>
+    <li>🎲 ガチャ3倍＆レア確率UP</li>
+    <li>🎁 プレミアム限定スキン・特典付き</li>
+  </ul>
+  <div style="text-align: center; margin-top: 15px;">
+    <button onclick="window.location.href='https://buy.stripe.com/test_dR67sMa4HaZ33sk5kl'"
+      style="background: linear-gradient(to right, #ffa726, #fb8c00); color: white; font-size: 18px; padding: 12px 28px; border: none; border-radius: 10px; cursor: pointer; transition: 0.2s ease;">
+      🌟 今すぐプレミアム登録（Stripe）
+    </button>
+  </div>
+</section>
+
 </body>
 </html>
